@@ -3,10 +3,10 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static('./dist/AngularQuizApplication'))
+app.use(express.static('./dist/AngularQuizApp'))
 
 app.get('/',(req,res)=>
-    res.sendFile('index.html',{root:'dist/AngularQuizApplication/'})
+    res.sendFile('index.html',{root:'dist/AngularQuizApp/'})
 )
 
 app.listen(process.env.PORT || 8000)
